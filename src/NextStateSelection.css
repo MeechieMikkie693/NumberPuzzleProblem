@@ -1,0 +1,55 @@
+.next-state-selection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #e2e4ea;
+  color: rgb(98, 6, 6);
+}
+
+.instruction-text {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #10321b;
+  color: rgb(231, 214, 214);
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.grid.highlight {
+  background-color: rgba(255, 215, 0, 0.3);
+  border: 2px solid #ff0;
+}
+
+.heuristic-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}

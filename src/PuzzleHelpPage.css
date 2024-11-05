@@ -1,0 +1,74 @@
+.puzzle-help-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #e2e4ea;
+  color: #3c0a0a;
+}
+
+.puzzle-state {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #10321b;
+  color: #f3f0eb;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.empty {
+  background-color: transparent;
+}
+
+.heuristic-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heuristic-modal-content {
+  background-color: #27ae60;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.close-modal {
+  background-color: white;
+  color: #27ae60;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-modal:hover {
+  background-color: #ddd;
+}
